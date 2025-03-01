@@ -8,7 +8,7 @@ A **custom Lovelace card** for **Home Assistant** that visualizes active network
 - **Dynamic Labels**: Node labels update in real time, adjusting their size and position based on camera distance.
 - **Smooth Animation**: Enjoy seamless zoom, pan, and orbit interactions with OrbitControls.
 
-![preview](path/to/preview.png)
+![preview](images/preview.png)
 
 ## Features
 
