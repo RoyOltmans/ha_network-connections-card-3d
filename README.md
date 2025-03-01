@@ -1,4 +1,4 @@
-# Network Connections Card 3D
+# Network Connections Card 3D orb
 
 A **custom Lovelace card** for **Home Assistant** that visualizes active network connections in an interactive 3D orb graph using [three.js](https://threejs.org/). This card transforms your network connection data into a dynamic 3D scene featuring:
 
@@ -34,14 +34,14 @@ A **custom Lovelace card** for **Home Assistant** that visualizes active network
 ### Manual Installation
 
 1. **Place the Card File**  
-   - Download `network-connections-card-3d.js` from this repository.
-   - Place it in your Home Assistant `www/` directory (e.g., `<config>/www/network-connections-card-3d.js`).
+   - Download `ha_network-connections-card-3d.js` from this repository.
+   - Place it in your Home Assistant `www/` directory (e.g., `<config>/www/ha_network-connections-card-3d.js`).
 
 2. **Add to Lovelace Resources**  
    - Navigate to Home Assistant → **Settings** → **Dashboards** → **Resources**.
    - Create a new resource with the following configuration:
      ```yaml
-     url: /local/network-connections-card-3d.js
+     url: /local/ha_network-connections-card-3d.js
      type: module
      ```
    - Note: `/local/` maps to the `www` folder in Home Assistant.
@@ -67,8 +67,9 @@ The card expects a sensor entity that exposes an attribute named `connections`, 
   { "source": "192.168.2.11", "sport": 5678, "target": "192.168.2.5", "port": 80 }
 ]
 
-A typical sensor configuration (using a command_line sensor) in your configuration.yaml might look like this:
 ```
+
+The sensor for host information is the following configuration (using a command_line sensor) in your configuration.yaml might look like this. WARNING: this is build for a fedora instance, and it could be possible that your command differs in your OS, so please test it according. You can also have a look at https://github.com/RoyOltmans/ha_netstat-overview-card for a more basic overview to understand whats happening:
 
 ```YAML
 command_line:
