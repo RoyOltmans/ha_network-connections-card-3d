@@ -2,6 +2,8 @@
 
 A **custom Lovelace card** for **Home Assistant** that visualizes active network connections in an interactive 3D orb graph using [three.js](https://threejs.org/). This card transforms your network connection data into a dynamic 3D scene featuring:
 
+If you do not have this available, use this instruction [setup three.js][three_setup.md]
+
 - **Central Hub**: Represents your main network node, positioned at the center.
 - **Ports**: Evenly distributed around the hub on a spherical layout.
 - **IP Addresses**: Bloom around each port with collision avoidance for a clear view.
